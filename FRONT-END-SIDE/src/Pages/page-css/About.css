@@ -1,0 +1,120 @@
+
+
+.AboutFullPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: url('../../assets/pexels-ella-olsson-572949-1640774.jpg') no-repeat center ;
+  background-size: contain;
+  height: 150vh;
+
+
+
+}
+
+.AboutTextAndChef {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  margin-left: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  height:fit-content ;
+  }
+
+.AboutText {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family:  'Times New Roman', Times, serif;
+}
+
+
+
+
+.MissionAndVision {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  font-family:  'Times New Roman', Times, serif;
+  font-size: 19px;
+  
+}
+
+.Mission, .Vision {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.AboutText h1 {
+  margin-bottom: 20px;
+  /* font-size: 2.5em; */
+  /* color: #333; */
+ 
+}
+
+.AboutText p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  /* color: #555; */
+}
+
+.Mission h2, .Vision h2 {
+  margin-bottom: 10px;
+  /* font-size: 2em; */
+  /* color: #333; */
+}
+h5{
+  font-family:  'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2em;
+}
+.Mission p, .Vision p {
+  line-height: 1.6;
+  /* color: #555; */
+  /* font-weight: bold; */
+}
+
+.AboutChefs {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.AboutFirstChef, .AboutSecondChef {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+margin-left: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.AboutFirstChef:hover, .AboutSecondChef:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ChefImage {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.AboutFirstChef h2, .AboutSecondChef h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.AboutFirstChef p, .AboutSecondChef p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+
+}

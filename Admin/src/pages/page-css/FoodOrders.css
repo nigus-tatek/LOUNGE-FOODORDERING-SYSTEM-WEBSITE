@@ -1,0 +1,153 @@
+ .FullOrderPage {
+  padding: 20px;
+  
+}
+
+.orderPage {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.orderPage h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adminOrders-container {
+  overflow-x: auto;
+}
+
+.adminOrders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.adminOrders-table th,
+.adminOrders-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.adminOrders-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.orderItemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.paymentScreenshotImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.paymentScreenshotImage:hover{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.adminRemove-button {
+  padding: 8px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adminRemove-button:hover {
+  background-color: #e60000;
+} 
+
+
+
+
+
+.adminRemove-button, .adminApprove-button, .adminReject-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.adminRemove-button {
+  background-color: red;
+  color: white;
+}
+
+.adminApprove-button {
+  background-color: green;
+  color: white;
+  
+}
+
+.adminReject-button {
+  background-color: orange;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+

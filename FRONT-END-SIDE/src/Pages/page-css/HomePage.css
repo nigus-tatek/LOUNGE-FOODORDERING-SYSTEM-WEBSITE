@@ -1,0 +1,97 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    background-image: url("../../assets/homebg.jpg");
+background-size: cover;
+height: 150vh;
+width:100%;
+}
+  .text1 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 60px;
+    text-shadow: #f9a825 3px 3px 3px;
+     font-weight: 400;
+     font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+
+  }
+ 
+
+  .additionalText {
+    font-size: 1.2rem;
+    
+    text-align: center;
+    max-width: 800px;
+ font-size:   35px;
+  }
+  
+  .SecondHomePage{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+    
+  }
+  .SecondHomePageText{
+  
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    border: 50px solid rgba(54, 54, 54, 0.384);
+    border-radius: 15px;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  font-size:19px;
+  
+  }
+  .SecondHomePageText:hover{
+    background: rgba(255, 255, 255, 0.9);
+    /* font-weight: bold; */
+
+  
+    /* transition: all 1.7s ease-in-out; */
+  
+    transform: scale(1.05);
+
+}
+
+  
+  .SecondHomePageImage{
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    border: 5px solid whitesmoke;
+    box-shadow: 100px;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+    background-image: url("../../assets/chefon\ work.png.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    
+    
+   /* background-size: 200px; */
+
+    
+  }
+  
+
+    
+    
+
+  

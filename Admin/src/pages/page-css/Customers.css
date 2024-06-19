@@ -1,0 +1,42 @@
+
+  .customers {
+    padding-top: 60px;
+
+    margin-top: 30px;
+    
+      width: 100%;
+    
+      height: auto;
+  
+    }
+    
+    .customers h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .customersTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    
+    .customersTable th,
+    .customersTable td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    .customersTable th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    
+    .customersTable tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .customersTable tr:hover {
+      background-color: #ddd;
+    }
+    
