@@ -7,7 +7,8 @@ import '../components-css/Header.css';
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [noResultsMessage, setNoResultsMessage] = useState(""); // State for no results message
+  const [noResultsMessage, setNoResultsMessage] = useState(""); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);  // State for menu toggle
 
   const fetchSearchResults = () => {
     if (searchTerm.trim() !== "") {
@@ -15,12 +16,12 @@ const Header = () => {
         .then(response => {
           if (response.data.length > 0) {
             setSearchResults(response.data);
-            setNoResultsMessage(""); // Clear message if results are found
+            setNoResultsMessage(""); 
           } else {
             setSearchResults([]);
-            setNoResultsMessage("Menu item does not exist."); // Set no results message
+            setNoResultsMessage("Menu item does not exist."); 
             setTimeout(() => {
-              setNoResultsMessage(""); // Clear message after a few seconds
+              setNoResultsMessage(""); 
             }, 4000);
           }
         })
@@ -42,6 +43,10 @@ const Header = () => {
     fetchSearchResults();
   };
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);  // Toggle the menu visibility
+  };
+
   return (
     <>
       <div className="headerAll">
@@ -61,7 +66,13 @@ const Header = () => {
           </form>
         </div>
 
-        <nav className="navBar">
+        {/* Hamburger Icon */}
+        <div className="hamburger" onClick={handleMenuToggle}>
+          &#9776;
+        </div>
+
+        {/* Navbar */}
+        <nav className={`navBar ${isMenuOpen ? 'open' : ''}`}>
           <Link className="link" to="/">
             Home
           </Link>
